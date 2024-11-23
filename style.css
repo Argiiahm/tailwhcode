@@ -1,0 +1,173 @@
+@keyframes Masuk {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+
+
+* {
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.838);
+    animation: Masuk ease-in 1s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 40px; */
+    padding: 40px;
+    margin-left: -16px;
+    background-color: #333;
+    /* border: 1px solid black; */
+    width: 95.5%;
+    margin-top: -10px;
+    box-shadow: 2px 1px 2px darkorange;
+}
+
+.logo {
+    color: white;
+}
+
+.menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-top: 80px;
+    margin-left: -185px;
+}
+.menu ul a {
+    text-decoration: none;
+    font-size: 13px;
+    color: darkorange;
+
+}
+.menu ul a:hover {
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.584); */
+    color: gray;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+}
+main {
+    display: flex;
+}
+.menu-kiri {
+    /* border: 1px solid black; */
+    width: 220px;
+    height: 100vh;
+    background-color:darkorange;
+    margin-left: -10px;
+}
+.menu-kiri ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-top: 40px;
+}
+
+.header {
+    /* border: 1px solid white; */
+    /* margin-left: 200px; */
+}
+
+.header h1 {
+    margin: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.header p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.516);
+    font-weight: bold;
+}
+.header button {
+    width: 200px;
+    height: 6vh;
+    margin-left: 415px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: darkorange;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+.header button:hover {
+    background-color: rgba(5, 2, 10, 0.484);
+    color: white;
+}
+.tester {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-top: 120px;
+}
+.tester img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+.text {
+    text-align: center;
+    color: white;
+}
+.client {
+    display: flex;
+    /* width: 100%; */
+    /* border: 1px solid white; */
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.mobile-view {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    .dekstop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+        color: green;
+        text-align: center;
+        background-color: white;
+        height: 30vh;
+        border-radius: 20px;
+        padding-top: 30px;
+    }
+    .mobile-view b {
+        color: orange;
+    }
+}
+
